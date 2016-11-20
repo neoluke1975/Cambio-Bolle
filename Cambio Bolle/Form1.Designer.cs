@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cBxGross1 = new System.Windows.Forms.CheckBox();
             this.cBxgross2 = new System.Windows.Forms.CheckBox();
             this.cBxgross3 = new System.Windows.Forms.CheckBox();
@@ -125,7 +126,6 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 30000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -331,6 +331,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Cambio Bolle";
             this.Load += new System.EventHandler(this.Form1_Load);
